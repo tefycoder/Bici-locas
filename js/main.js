@@ -21,4 +21,9 @@ function validateForm(){
 	if (document.getElementsByTagName("select")[0].value == 0){
 		alert("Selecciona tu tipo de bici");
 	}
+	if (apellido.charAt(0) == apellido.charAt(0).toLowerCase() || nombre.charAt(0) == nombre.charAt(0).toLowerCase())
+    	alert("La primera letra debe ser Mayuscula");
+	else
+		return true;
+
 }
